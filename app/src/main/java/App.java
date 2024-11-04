@@ -1,13 +1,17 @@
+// import com.recipeapp.datahandler.CSVDataHandler;
+// import com.recipeapp.datahandler.DataHandler;
+// import com.recipeapp.datahandler.JSONDataHandler;
 import com.recipeapp.datahandler.CSVDataHandler;
-import com.recipeapp.datahandler.DataHandler;
 import com.recipeapp.datahandler.JSONDataHandler;
+import com.recipeapp.datahandler.DataHandler;
+// import com.recipeapp.ui.RecipeUI;
 import com.recipeapp.ui.RecipeUI;
 import java.io.*;
 
 public class App {
 
     public static void main(String[] args) {
-
+    
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             System.out.println("Choose the file format:");
             System.out.println("1. CSV");
@@ -20,12 +24,12 @@ public class App {
                 case "1":
                     // CSVが選ばれた場合はCSVDataHandlerのインスタンス生成
                     dataHandler = new CSVDataHandler();
-                    System.out.println("Current mode: " + dataHandler.getMode());
+                    System.out.println(dataHandler.getMode());
                     break;
                 case "2":
                     // JSONが選ばれた場合はJSONDataHandlerのインスタンス生成
                     dataHandler = new JSONDataHandler();
-                    System.out.println("Current mode: " + dataHandler.getMode());
+                    System.out.println(dataHandler.getMode());
                     break;
                 default:
                     // 不正な入力の場合はCSVDataHandlerのインスタンス生成
