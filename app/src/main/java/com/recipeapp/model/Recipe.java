@@ -1,7 +1,8 @@
 package com.recipeapp.model;
 import java.util.ArrayList;
 
-import com.recipeapp.Ingredient;
+//エラーmodel
+import com.recipeapp.model.Ingredient;
 
 public class Recipe {
     

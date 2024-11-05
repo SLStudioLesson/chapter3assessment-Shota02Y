@@ -16,11 +16,6 @@ import com.recipeapp.model.Recipe;
 public class RecipeUI {
     private BufferedReader reader;
     private DataHandler dataHandler;
-    private String filePath;
-
-    public CSVDataHandler() {
-        filePath = "app/src/main/resources/recipes.csv";
-    }
 
     public RecipeUI(DataHandler dataHandler) {
         reader = new BufferedReader(new InputStreamReader(System.in));
